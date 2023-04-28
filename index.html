@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Skoop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFD700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            color: #9400D3;
+        }
+        
+        a {
+            color: #4B0082;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:hover {
+            color: #0000FF;
+        }
+        
+        h1 {
+            font-size: 48px;
+            text-align: center;
+        }
+        
+        p {
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1>The Skoop</h1>
+        <p>
+            Coming soon! And in the meantime, check out
+            <a href="https://www.restorationcider.com/" target="_blank">Restoration Cider</a>.
+        </p>
+    </div>
+    <script>
+        function changeBgColor() {
+            const colors = ['#FFD700', '#FF4500', '#7FFF00', '#DC143C', '#00FFFF'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+        setInterval(changeBgColor, 2000);
+    </script>
+</body>
+</html>
